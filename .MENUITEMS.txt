@@ -1,0 +1,18 @@
+// NORELOAD            // inhibit reload on rez -- useful for worn items
+
+MENU MAIN MENU | ALL
+TOMENU EXTRAS>>
+
+MENU EXTRAS>> | ALL
+ADJUST
+CHAT Chat Info | ON                    //switches chat info: ON/OFF (set default)
+TOMENU OPTIONS>>
+STOP
+BACK
+
+MENU OPTIONS>> | OWNER           //this menu can be accessed by the OWNER only (other options: GROUP / ALL)
+MENUUSERS MenuUsers | ALL   //switches who can access menus: ALL/GROUP/OWNER (set default)
+TOOLS TOOLS>>                                        // Show the Tools menu, if it's installed.
+RESTART ShutDown!
+BACK
+
