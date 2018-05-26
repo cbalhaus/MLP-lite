@@ -114,17 +114,17 @@ new notecard.
 ### TO MAKE A BACKUP:
 
 Saved positions are stored in memory but are not permanent.  They are
-lost on script error (See "Script run-time error / Stack-Heap Collision"
-below).  They are also lost on shutdown/startup, or "Pos Reset".  To
-back the positions up more permanently you have to copy them into a
-new .POSITIONS notecard:
-- Select 'EXTRAS>>', 'OPTIONS>>', then 'Save Pos' .
+lost on script error.  They are also lost on shutdown/startup, or "Pos
+Reset".  To back the positions up more permanently you have to copy them
+into a new .POSITIONS notecard:
+
+- Select `EXTRAS>>`, `OPTIONS>>`, then `Save Pos`.
+
 All original .POSITIONS* cards are copied to .backup.POSITIONS* cards.
 Prop positions are saved to .PROPS, so the same applies.
 
-Note: After changing any *.POSITIONS* files, use the 'Pos Reset' command
-to verify your changes, if desired.  This also helps to avoid losing
-changes due to Stack-Heap collisions.
+Note: After changing any .POSITIONS* files, use the `Pos Reset` command
+to verify your changes, if desired.
 
 ### TO ADJUST HEIGHT OFFSET (Z):
 
@@ -280,21 +280,6 @@ the MLP object.  A balls will commit suicide if left behind somewhere
 If the MLP object contains many things, access to it's contents can be
 slow, just keep waiting until it's all loaded.  Can take over a minute
 sometimes.
-
-- "Script run-time error / Stack-Heap Collision"?
-
-Right-click/Edit the object, and use SL menu: "Tools -> Reset Scripts in
-Selection" to reset. Any saved positions that were not backed up in
-.POSITIONS files are lost, so if your furniture has lots of poses (over
-50) and you save positions, be sure to back up regularly.  Use OPTIONS ->
-Pos Reset after changing .POSITIONS* files.
-
-FAQ for those who edit *.MENUITEMS files:
-
-- "Script run-time error / Stack-Heap Collision"?
-
-After a restart, this is a clue that there are too many items in
-*.MENUITEMS* or *.POSITIONS* files.  Trim the menu.
 
 - My new menu appears on the main page, rather than as a submenu where I
 configured it.  Why?
