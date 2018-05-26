@@ -6,6 +6,8 @@ rejected, of the venerable MLP scripts.  It uses OpenSim specific
 functions, so wont work in Second Life.  It might not work on some
 OpenSim grids or sims, due to the use of OpenSim specific "high threat
 level" functions.  Test it first before putting it in anything important.
+The source code for MLP-lite is kept at https://github.com/onefang/MLP-lite
+and this file is written using GitHub Flavored Markdown.
 
 ---
 
