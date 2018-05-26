@@ -7,20 +7,20 @@ functions, so wont work in Second Life.  It might not work on some
 OpenSim grids or sims, due to the use of OpenSim specific "high threat
 level" functions.  Test it first before putting it in anything important.
 
-------------------------------------------------
+---
 
 CONTENTS:
 - INTRODUCTION
 - FEATURES
 - OPERATION
--- TO ADJUST POSITIONS
--- TO MAKE A BACKUP
--- TO ADJUST HEIGHT OFFSET (Z)
--- TO ADD POSES
--- TO CREATE ANIMATION SETS (menus)
--- SWAPPING POSES
--- ACCESS TO THE MAIN MENU
--- PORTABLE USE
+  - TO ADJUST POSITIONS
+  - TO MAKE A BACKUP
+  - TO ADJUST HEIGHT OFFSET (Z)
+  - TO ADD POSES
+  - TO CREATE ANIMATION SETS (menus)
+  - SWAPPING POSES
+  - ACCESS TO THE MAIN MENU
+  - PORTABLE USE
 - FAQ for END USERS
 - UPGRADE GUIDE
 - DIFFERENCES FOR THE MLP lite v3.0 for OpenSim VARIATION
