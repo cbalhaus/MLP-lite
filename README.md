@@ -534,7 +534,7 @@ threat?
 Saves having to cut and paste to notecards after editing ball and prop
 positions.
 
--osMessageObject()
+- osMessageObject()
 Threat level: Low, only enabled for estate owners and managers by
 default.
 
@@ -544,14 +544,14 @@ couldn't do before.
 Used to reduce the complexity and increase the reliability of messages
 between the MLP object and balls / props.
 
--osReplaceString()
+- osReplaceString()
 Threat level: VeryLow , enabled by default.
 
 Why isn't this threat level none?
 
 Used to reduce script complexity.
 
--osSetPrimitiveParams()
+- osSetPrimitiveParams()
 Threat level: High, disabled by default.
 
 Once again, allows scripting of something that can be done manually, and
