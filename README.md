@@ -149,28 +149,29 @@ To give an expression to an animation, add one of the following suffixes
 to the anim name in the POSE line.  (Just add it to the POSE config line,
 don't change the anim name.)
 
-   Suffix / expression
-    *        open mouth
-    ::1      open mouth
-    ::2      surprise
-    ::3      tongue out
-    ::4      smile
-    ::5      toothsmile
-    ::6      wink
-    ::7      cry
-    ::8      kiss
-    ::9      laugh
-    ::10    disdain
-    ::11    repulsed
-    ::12    anger
-    ::13    bored
-    ::14    sad
-    ::15    embarrassed
-    ::16    frown
-    ::17    shrug
-    ::18    afraid
-    ::19    worry
-    ::20    sleeping (combination of disdain and smile, closest I could find)
+  Suffix | expression
+  ------ | ----------
+  *      | open mouth
+  ::1    | open mouth
+  ::2    | surprise
+  ::3    | tongue out
+  ::4    | smile
+  ::5    | toothsmile
+  ::6    | wink
+  ::7    | cry
+  ::8    | kiss
+  ::9    | laugh
+  ::10   | disdain
+  ::11   | repulsed
+  ::12   | anger
+  ::13   | bored
+  ::14   | sad
+  ::15   | embarrassed
+  ::16   | frown
+  ::17   | shrug
+  ::18   | afraid
+  ::19   | worry
+  ::20   | sleeping (combination of disdain and smile, closest I could find)
 
 To make the expression happen periodically rather than constantly, add
 another extension and the period (in seconds).  This is mostly needed for
