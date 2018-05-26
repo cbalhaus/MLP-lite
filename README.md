@@ -1,15 +1,15 @@
 # MLP-lite
 A lighter version of the MLP scripts, built for OpenSim.
 
-MLP lite v3.0 for OpenSim is almost a complete rewrite by onefang
-rejected, of the venerable MLP scripts.  It uses OpenSim specific
-functions, so wont work in Second Life.  It might not work on some
-OpenSim grids or sims, due to the use of OpenSim specific "high threat
-level" functions.  Test it first before putting it in anything important.
+MLP lite v3.0 for OpenSim is almost a complete rewrite of the venerable
+MLP scripts, by onefang rejected.  It uses OpenSim specific functions, so
+wont work in Second Life.  It might not work on some OpenSim grids or
+sims, due to the use of OpenSim specific "high threat level" functions. 
+Test it first before putting it in anything important.
+
 The source code for MLP-lite is kept at https://github.com/onefang/MLP-lite
 and this file is written using GitHub Flavored Markdown.
 
----
 
 CONTENTS:
 - INTRODUCTION
@@ -79,26 +79,27 @@ with the latest MLP versions I had laying around.
 
 - Put all your poseball animations into one object (110 pairs or even more
 should be no problem).
-- Create submenus for each category of poses, for instance: "Solo,
-Boy-Girl, Girl-Girl, Dance, 3some, 4some"
-- Shows up to nine poseballs depending on the submenu you select
+- Create submenus for each category of poses, for instance:
+  - "Solo, Boy-Girl, Girl-Girl, Dance, 3some, 4some"
+- Shows up to nine poseballs depending on the submenu you select.
 - Positions can be adjusted and saved into memory or notecard.
-- Portable, can be worn and used everywhere
+- Portable, can be worn and used everywhere.
 - Option to adjust height offset (Z) of all poses at once (for different
 persons/locations).
 - 15 poseball colours:
-    PINK, BLUE, PINK2, BLUE2, GREEN, MAGENTA, RED, ORANGE, WHITE, BLACK,
-    YELLOW, CYAN, RED2, TEAL, GREEN2
+  - PINK, BLUE, PINK2, BLUE2, GREEN, MAGENTA, RED, ORANGE, WHITE, BLACK,
+  - YELLOW, CYAN, RED2, TEAL, GREEN2
 
 
-## OPERATION:
+## BASIC OPERATION:
 
 - Click the MLP object to switch it on.
 - When everything has loaded the main menu will appear.
 - Select a submenu containing poses, and select a pose.  Pose balls will
 appear.
 - Sit on your pose ball (Right-click - LOVE).
-- To remove the balls, select 'EXTRAS>>' then 'STOP', or just walk away,
+- When you are done, stand up.
+- To remove the balls, select `EXTRAS>>` then `STOP`, or just walk away,
 it will shut down automatically when no one is around.
 
 ### ACCESS TO THE MAIN MENU:
@@ -125,12 +126,12 @@ see examples in .MENUITEMS).
 You can adjust the poses to fit your own avatar and those you share MLP
 with.
 - Select a pose you want to adjust and sit on the balls.
-- Select 'EXTRAS>> ' then 'ADJUST'.  This changes the balls into
+- Select `EXTRAS>> ` then `ADJUST`.  This changes the balls into
 translucent beams.
 - Right-click a beam, select Edit and adjust the position (Shift-click to
 select more than one).
 - Position the balls anywhere within the sim.
-- 'EXTRAS>>', 'OPTIONS>>', then 'Save Pos' stores the positions into a
+- `EXTRAS>>`, `OPTIONS>>`, then `Save Pos` stores the positions into a
 new notecard.
 
 ### TO MAKE A BACKUP:
@@ -150,7 +151,7 @@ to verify your changes, if desired.
 
 ### TO ADJUST HEIGHT OFFSET (Z):
 
-Select 'EXTRAS>>', 'OPTIONS>>', then'Height>>' and click the 'Z'-buttons,
+Select `EXTRAS>>`, `OPTIONS>>`, then`Height>>` and click the `Z`-buttons,
 this will adjust the height for all poses.  Note: the offset height is
 stored in the objects Description, so any descriptions will be replaced.
 
@@ -163,9 +164,8 @@ as MLP, just copy the MLP contents in the object of your choice. Open the
 
 POSE name | animation1 | animation2 ... 
 
-The changes will become active after MLP is (re)started.  Use the 'Menu
-Reset' command after changing 
-*.MENUITEMS* files.
+The changes will become active after MLP is (re)started.  Use the `Menu
+Reset` command after changing .MENUITEMS* files.
 
 To give an expression to an animation, add one of the following suffixes
 to the anim name in the POSE line.  (Just add it to the POSE config line,
@@ -282,6 +282,9 @@ No.  The animations are not placed the balls, they remain in the main MLP
 object.  Don't worry about the poseballs, they are copies of the one in
 the MLP object.  A balls will commit suicide if left behind somewhere
 (the MLP object needs to be within the same sim).
+
+
+## FAQ for CREATORS:
 
 - Sometimes notecards or scripts won't open for editing, why?
 
