@@ -7,6 +7,29 @@ functions, so wont work in Second Life.  It might not work on some
 OpenSim grids or sims, due to the use of OpenSim specific "high threat
 level" functions.  Test it first before putting it in anything important.
 
+------------------------------------------------
+
+CONTENTS:
+- INTRODUCTION
+- FEATURES
+- OPERATION
+-- TO ADJUST POSITIONS
+-- TO MAKE A BACKUP
+-- TO ADJUST HEIGHT OFFSET (Z)
+-- TO ADD POSES
+-- TO CREATE ANIMATION SETS (menus)
+-- SWAPPING POSES
+-- ACCESS TO THE MAIN MENU
+-- PORTABLE USE
+- FAQ for END USERS
+- UPGRADE GUIDE
+- DIFFERENCES FOR THE MLP lite v3.0 for OpenSim VARIATION
+- OPENSIM THREAT LEVELS
+
+------------------------------------------------
+
+INTRODUCTION:
+
 The main justification for this rewrite is that I have about a dozen
 OpenSim sims, some with dozens of copies of MLP running.  So this
 variation uses some OpenSim specific LSL functions, tries to use less 
@@ -16,17 +39,6 @@ of these seem to not be used, or useful, or just don't get used in my
 sims.  Note that I've not extensively tested any of this stuff yet.  It's
 not a huge improvement, but when you have dozens of the things, every
 little bit helps.  And then I added more features.  lol
-
-Note that some of the OpenSim functions used are what OpenSim classes as
-"high threat level".  More about that below.  This means that these
-scripts wont work without some tweaking of your grid / sims 
-configuration.  This has only been tested in my hacked up version of
-OpenSim 0.8.2, which removes a lot of the insane threat levels and script
-delays, so anything I say about speed improvements might not apply.  I
-did at least remove script delays in both LL and OS functions.  If
-nothing works for you, this is likely why, and you should go back to the
-old scripts.  Test it first before upgrading anything that's not full
-perm.
 
 Based on the original MLP - MULTI-LOVE-POSE V1.2 - Copyright (c) 2006, by
 Miffy Fluffy (BSD License).  This code has bounced around Second Life and
@@ -46,12 +58,24 @@ simple search.  The versions I have seen don't specify which variation of
 the BSD license, so I wont either.  GitHub insists on a license file, so
 I went with 3 clause BSD.
 
-The next two sections of this document is mostly copied from the .readme
-file I got with the latest MLP versions I had laying around.
+Note that some of the OpenSim functions used are what OpenSim classes as
+"high threat level".  More about that below.  This means that these
+scripts wont work without some tweaking of your grid / sims 
+configuration.  This has only been tested in my hacked up version of
+OpenSim 0.8.2, which removes a lot of the insane threat levels and script
+delays, so anything I say about speed improvements might not apply.  I
+did at least remove script delays in both LL and OS functions.  If
+nothing works for you, this is likely why, and you should go back to the
+old scripts.  Test it first before upgrading anything that's not full
+perm.
 
-================================================
+Some parts of this document is mostly copied from the .readme file I got
+with the latest MLP versions I had laying around.
+
+------------------------------------------------
 
 FEATURES:
+
 - Put all your poseball animations into one object (110 pairs or even more
 should be no problem).
 - Create submenus for each category of poses, for instance: "Solo,
@@ -65,7 +89,10 @@ persons/locations).
     PINK, BLUE, PINK2, BLUE2, GREEN, MAGENTA, RED, ORANGE, WHITE, BLACK,
     YELLOW, CYAN, RED2, TEAL, GREEN2
 
+------------------------------------------------
+
 OPERATION:
+
 - Click the MLP object to switch it on.
 - When everything has loaded the main menu will appear.
 - Select a submenu containing poses, and select a pose.  Pose balls will
@@ -75,6 +102,7 @@ appear.
 it will shut down automatically when no one is around.
 
 TO ADJUST POSITIONS:
+
 You can adjust the poses to fit your own avatar and those you share MLP
 with.
 - Select a pose you want to adjust and sit on the balls.
@@ -87,6 +115,7 @@ select more than one).
 new notecard.
 
 TO MAKE A BACKUP:
+
 Saved positions are stored in memory but are not permanent.  They are
 lost on script error (See "Script run-time error / Stack-Heap Collision"
 below).  They are also lost on shutdown/startup, or "Pos Reset".  To
@@ -101,11 +130,13 @@ to verify your changes, if desired.  This also helps to avoid losing
 changes due to Stack-Heap collisions.
 
 TO ADJUST HEIGHT OFFSET (Z):
+
 Select 'EXTRAS>>', 'OPTIONS>>', then'Height>>' and click the 'Z'-buttons,
 this will adjust the height for all poses.  Note: the offset height is
 stored in the objects Description, so any descriptions will be replaced.
 
 TO ADD POSES:
+
 Copy all animations into the MLP object (if you want to use existing pose
 balls, open them to rip their animations).  Note: you can use any object
 as MLP, just copy the MLP contents in the object of your choice. Open the
@@ -164,6 +195,7 @@ best I could find for the purpose).  This serves as a clue to the user
 that the button plays a sound.
 
 TO CREATE ANIMATION SETS (menus):
+
 Create .MENUITEMS.xxx and .POSITIONS.xxx files (where xxx is whatever you
 want) and put the corresponding menu configs and poses in them.  This
 way you can deliver a bed with folders of add-on menus so the customer
@@ -179,6 +211,7 @@ Customers can easily select furniture appearance and pose bundles
 independently!
 
 SWAPPING POSES:
+
 Each menu can have a swap command:
 
     SWAP | 21
@@ -211,6 +244,7 @@ Also, the original one should be supported, that uses the default:
     SWAP
 
 ACCESS TO THE MAIN MENU:
+
 The owner is the only one who can shutdown, in all cases.  Anyone
 can start it.
 - if 'MenuUser' is set to OWNER: the owner is the only one who can access
@@ -225,6 +259,7 @@ define access for each submenu in .MENUITEMS, see examples in
 .MENUITEMS).
 
 PORTABLE USE:
+
 Attach the object to the HUD, you can use it's default shape and colour
 for clickable bar on one of the edges of your screen (to move HUD
 position: Right-click - Edit), you can edit
@@ -233,7 +268,7 @@ the balls will appear relative to the initial MLP position (to reset
 where the balls appear, press STOP to remove the balls, and reselect a
 submenu to rez them again).
 
-================================================
+------------------------------------------------
 
 FAQ for END USERS:
 
@@ -272,7 +307,7 @@ Most likely, you named it differently in the MENU line versus the TOMENU
 line.  When MPL sees a MENU line, it looks for the same name in a TOMENU
 line.
 
-================================================
+------------------------------------------------
 
 UPGRADE GUIDE:
 
@@ -317,7 +352,7 @@ If you still want to edit the poses / props, or do any of the other
 tweaking, then you might want to add the "~MLP lite tools" script to My
 Old Bed.  Leave it out, or remove it, once My Old Bed is fully set up.
 
-================================================
+------------------------------------------------
 
 DIFFERENCES FOR THE MLP lite v3.0 for OpenSim VARIATION:
 
@@ -451,7 +486,7 @@ anyway.
 
 - There may be a thing or two I forgot to mention here.
 
-================================================
+------------------------------------------------
 
 OPENSIM THREAT LEVELS:
 
