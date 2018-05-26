@@ -26,7 +26,6 @@ CONTENTS:
 - DIFFERENCES FOR THE MLP lite v3.0 for OpenSim VARIATION
 - OPENSIM THREAT LEVELS
 
-------------------------------------------------
 
 ## INTRODUCTION:
 
@@ -72,9 +71,8 @@ perm.
 Some parts of this document is mostly copied from the .readme file I got
 with the latest MLP versions I had laying around.
 
-------------------------------------------------
 
-FEATURES:
+## FEATURES:
 
 - Put all your poseball animations into one object (110 pairs or even more
 should be no problem).
@@ -89,9 +87,8 @@ persons/locations).
     PINK, BLUE, PINK2, BLUE2, GREEN, MAGENTA, RED, ORANGE, WHITE, BLACK,
     YELLOW, CYAN, RED2, TEAL, GREEN2
 
-------------------------------------------------
 
-OPERATION:
+## OPERATION:
 
 - Click the MLP object to switch it on.
 - When everything has loaded the main menu will appear.
@@ -101,7 +98,7 @@ appear.
 - To remove the balls, select 'EXTRAS>>' then 'STOP', or just walk away,
 it will shut down automatically when no one is around.
 
-TO ADJUST POSITIONS:
+### TO ADJUST POSITIONS:
 
 You can adjust the poses to fit your own avatar and those you share MLP
 with.
@@ -114,7 +111,7 @@ select more than one).
 - 'EXTRAS>>', 'OPTIONS>>', then 'Save Pos' stores the positions into a
 new notecard.
 
-TO MAKE A BACKUP:
+### TO MAKE A BACKUP:
 
 Saved positions are stored in memory but are not permanent.  They are
 lost on script error (See "Script run-time error / Stack-Heap Collision"
@@ -129,13 +126,13 @@ Note: After changing any *.POSITIONS* files, use the 'Pos Reset' command
 to verify your changes, if desired.  This also helps to avoid losing
 changes due to Stack-Heap collisions.
 
-TO ADJUST HEIGHT OFFSET (Z):
+### TO ADJUST HEIGHT OFFSET (Z):
 
 Select 'EXTRAS>>', 'OPTIONS>>', then'Height>>' and click the 'Z'-buttons,
 this will adjust the height for all poses.  Note: the offset height is
 stored in the objects Description, so any descriptions will be replaced.
 
-TO ADD POSES:
+### TO ADD POSES:
 
 Copy all animations into the MLP object (if you want to use existing pose
 balls, open them to rip their animations).  Note: you can use any object
@@ -194,7 +191,7 @@ you begin the pose name with "☊" (which looks a bit like headphones, the
 best I could find for the purpose).  This serves as a clue to the user
 that the button plays a sound.
 
-TO CREATE ANIMATION SETS (menus):
+### TO CREATE ANIMATION SETS (menus):
 
 Create .MENUITEMS.xxx and .POSITIONS.xxx files (where xxx is whatever you
 want) and put the corresponding menu configs and poses in them.  This
@@ -210,7 +207,7 @@ associated animations for the customer to drop into the furniture.
 Customers can easily select furniture appearance and pose bundles
 independently!
 
-SWAPPING POSES:
+### SWAPPING POSES:
 
 Each menu can have a swap command:
 
@@ -243,7 +240,7 @@ Also, the original one should be supported, that uses the default:
 
     SWAP
 
-ACCESS TO THE MAIN MENU:
+### ACCESS TO THE MAIN MENU:
 
 The owner is the only one who can shutdown, in all cases.  Anyone
 can start it.
@@ -258,7 +255,7 @@ to ALL or GROUP, individual SUBMENUS can still be blocked (you can
 define access for each submenu in .MENUITEMS, see examples in
 .MENUITEMS).
 
-PORTABLE USE:
+### PORTABLE USE:
 
 Attach the object to the HUD, you can use it's default shape and colour
 for clickable bar on one of the edges of your screen (to move HUD
@@ -268,9 +265,8 @@ the balls will appear relative to the initial MLP position (to reset
 where the balls appear, press STOP to remove the balls, and reselect a
 submenu to rez them again).
 
-------------------------------------------------
 
-FAQ for END USERS:
+## FAQ for END USERS:
 
 - Will my animations be lost if I lose a poseball?
 
@@ -307,9 +303,8 @@ Most likely, you named it differently in the MENU line versus the TOMENU
 line.  When MPL sees a MENU line, it looks for the same name in a TOMENU
 line.
 
-------------------------------------------------
 
-UPGRADE GUIDE:
+## UPGRADE GUIDE:
 
 For the sake of these instructions, let's say you want to upgrade the
 scripts in an object called "My Old Bed", this is what you would do.  
@@ -352,9 +347,8 @@ If you still want to edit the poses / props, or do any of the other
 tweaking, then you might want to add the "~MLP lite tools" script to My
 Old Bed.  Leave it out, or remove it, once My Old Bed is fully set up.
 
-------------------------------------------------
 
-DIFFERENCES FOR THE MLP lite v3.0 for OpenSim VARIATION:
+## DIFFERENCES FOR THE MLP lite v3.0 for OpenSim VARIATION:
 
 As mentioned above, this variation drops a few rarely used features, and
 tries to make things a bit better for OpenSim users.  Note that some of
@@ -486,9 +480,8 @@ anyway.
 
 - There may be a thing or two I forgot to mention here.
 
-------------------------------------------------
 
-OPENSIM THREAT LEVELS:
+## OPENSIM THREAT LEVELS:
 
 OpenSim developers introduced a concept of "threat levels" for their new
 os* LSL functions.  In my not so humble opinion, they where very
