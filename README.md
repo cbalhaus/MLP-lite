@@ -12,14 +12,15 @@ level" functions.  Test it first before putting it in anything important.
 CONTENTS:
 - INTRODUCTION
 - FEATURES
-- OPERATION
+- BASIC OPERATION
+  - ACCESS TO THE MAIN MENU
+- ADVANCED OPERATION
   - TO ADJUST POSITIONS
   - TO MAKE A BACKUP
   - TO ADJUST HEIGHT OFFSET (Z)
   - TO ADD POSES
   - TO CREATE ANIMATION SETS (menus)
   - SWAPPING POSES
-  - ACCESS TO THE MAIN MENU
   - PORTABLE USE
 - FAQ for END USERS
 - UPGRADE GUIDE
@@ -97,6 +98,25 @@ appear.
 - Sit on your pose ball (Right-click - LOVE).
 - To remove the balls, select 'EXTRAS>>' then 'STOP', or just walk away,
 it will shut down automatically when no one is around.
+
+### ACCESS TO THE MAIN MENU:
+
+Anyone can start an MLP-lite object.  The owner is the only one who can
+shutdown, though they shut down automatically when no one is around.
+
+- if `MenuUser` is set to OWNER: the owner is the only one who can access
+the menus.
+- if `MenuUser` is set to ALL: anyone can access the menus.
+- if `MenuUser` is set to GROUP: members of the same Group as the MLP
+object can access the menus (the MLP Group can set by right-clicking
+MLP and selecting Edit, More >> General tab - Group: Set).
+
+Note: even if `MenuUser` is set to ALL or GROUP, individual SUBMENUS can
+still be blocked (you can define access for each submenu in .MENUITEMS,
+see examples in .MENUITEMS).
+
+
+## ADVANCED OPERATION:
 
 ### TO ADJUST POSITIONS:
 
@@ -240,21 +260,6 @@ You can also use a different name for the button:
 Also, the original one should be supported, that uses the default:
 
     SWAP
-
-### ACCESS TO THE MAIN MENU:
-
-The owner is the only one who can shutdown, in all cases.  Anyone
-can start it.
-- if 'MenuUser' is set to OWNER: the owner is the only one who can access
-the menus
-- if 'MenuUser' is set to ALL: anyone can access the MAIN MENU
-- if 'MenuUser' is set to GROUP: members of the same Group as the MLP
-object can access the 
-MAIN MENU (the MLP Group can set by right-clicking MLP and selecting
-Edit, More >> General tab - Group: Set) Note: even if "MenuUser" is set
-to ALL or GROUP, individual SUBMENUS can still be blocked (you can 
-define access for each submenu in .MENUITEMS, see examples in
-.MENUITEMS).
 
 ### PORTABLE USE:
 
